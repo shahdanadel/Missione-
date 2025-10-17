@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Contatti</title>
+    <meta name="description" content="Contattaci per una consulenza gratuita - TechSolutions">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-code"></i> TechSolutions
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servizi">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#chi-siamo">Chi Siamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contatti.html">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contattaci</h1>
+            <p>Siamo qui per rispondere a tutte le tue domande</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h2>Informazioni di Contatto</h2>
+                        <p>Compila il form oppure contattaci direttamente attraverso i nostri canali.</p>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Indirizzo</h4>
+                                <p>Via Roma 123<br>20121 Milano, Italia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Telefono</h4>
+                                <p>+39 02 1234 5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>info@techsolutions.it</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Orari</h4>
+                                <p>Lun - Ven: 9:00 - 18:00<br>Sab: 9:00 - 13:00</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <h2>Inviaci un Messaggio</h2>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo *</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="nome" 
+                                    name="nome" 
+                                    required 
+                                    minlength="2"
+                                    maxlength="50"
+                                >
+                                <div class="invalid-feedback">
+                                    Il nome deve contenere almeno 2 caratteri.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                >
+                                <div class="invalid-feedback">
+                                    Inserisci un indirizzo email valido.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input 
+                                    type="tel" 
+                                    class="form-control" 
+                                    id="telefono" 
+                                    name="telefono"
+                                    pattern="[0-9+\s\-\(\)]+"
+                                    minlength="8"
+                                    maxlength="20"
+                                >
+                                <div class="invalid-feedback">
+                                    Inserisci un numero di telefono valido.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="servizio" class="form-label">Servizio di Interesse *</label>
+                                <select class="form-select" id="servizio" name="servizio" required>
+                                    <option value="">Seleziona un servizio</option>
+                                    <option value="web">Sviluppo Web</option>
+                                    <option value="mobile">App Mobile</option>
+                                    <option value="cloud">Cloud Solutions</option>
+                                    <option value="security">Cybersecurity</option>
+                                    <option value="analytics">Analytics</option>
+                                    <option value="support">Supporto</option>
+                                    <option value="altro">Altro</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Seleziona un servizio.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="messaggio" class="form-label">Messaggio *</label>
+                                <textarea 
+                                    class="form-control" 
+                                    id="messaggio" 
+                                    name="messaggio" 
+                                    rows="5" 
+                                    required
+                                    minlength="10"
+                                    maxlength="1000"
+                                ></textarea>
+                                <div class="invalid-feedback">
+                                    Il messaggio deve contenere almeno 10 caratteri.
+                                </div>
+                                <small class="form-text text-muted">Caratteri: <span id="charCount">0</span>/1000</small>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input 
+                                    type="checkbox" 
+                                    class="form-check-input" 
+                                    id="privacy" 
+                                    name="privacy" 
+                                    required
+                                >
+                                <label class="form-check-label" for="privacy">
+                                    Accetto la <a href="#" class="privacy-link">privacy policy</a> *
+                                </label>
+                                <div class="invalid-feedback">
+                                    Devi accettare la privacy policy per procedere.
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane"></i> Invia Messaggio
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message -->
+                        <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                            <i class="fas fa-check-circle"></i> Messaggio inviato con successo! Ti risponderemo al più presto.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Mappa della nostra sede</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-code"></i> TechSolutions</h5>
+                    <p>Trasformiamo le tue idee in soluzioni digitali innovative. Partner affidabile per la tua crescita digitale.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Link Utili</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#servizi">Servizi</a></li>
+                        <li><a href="index.html#chi-siamo">Chi Siamo</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Servizi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servizi">Sviluppo Web</a></li>
+                        <li><a href="index.html#servizi">App Mobile</a></li>
+                        <li><a href="index.html#servizi">Cloud Solutions</a></li>
+                        <li><a href="index.html#servizi">Cybersecurity</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contatti</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Via Roma 123, Milano</li>
+                        <li><i class="fas fa-phone"></i> +39 02 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@techsolutions.it</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSolutions. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
