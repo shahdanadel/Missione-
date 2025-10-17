@@ -38,7 +38,7 @@ This project implements a modern, responsive website that improves upon typical 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/shahdanadel/Missione-.git
+   git clone <repository-url>
    cd Missione-
    ```
 
